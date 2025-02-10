@@ -1,0 +1,30 @@
+const CircularTextSVG = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    {/* Define the circular path */}
+    <defs>
+      <path
+        id="circlePath"
+        d="M 100, 100
+           m -75, 0
+           a 75,75 0 1,1 150,0
+           a 75,75 0 1,1 -150,0"
+      />
+    </defs>
+
+    {/* Apply the text to the path */}
+    <text font-size="12" fill="black" font-family="Arial">
+      <textPath href="#circlePath" startOffset="50%" text-anchor="middle">
+        Future Engineer • Coding & Web Dev Lover •
+      </textPath>
+    </text>
+
+    {/* Center "Hire Me" button */}
+    <foreignObject x="75" y="75" width="50" height="50">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+        <a href="#contact" className="hire-me-button-svg">
+          Hire Me
+        </a>
+      </div>
+    </foreignObject>
+  </svg>
+);
