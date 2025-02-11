@@ -1,10 +1,8 @@
 {
-  "homepage": "https://ayman-bahou.github.io/portfolio",
   "name": "developer-portfolio-starter-code",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
