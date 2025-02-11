@@ -34,7 +34,7 @@ export default function Home() {
             <div className='w-1/2 flex flex-col items-center self-center'>
               <AnimatedText text="Bonjour je m'appelle Ayman Bahou" className='!text-5xl' />
               <p className="mt-2 text-base font-medium">
-              Étudiant ingénieur en M1 spécialisé en développement logiciel à l'ENSEEIHT, je suis passionné par le développement web et la programmation en général. Actuellement, je suis <span className='font-bold'>à la recherche d'un stage de 3 à 4 mois à partir de juin et/ou d'une alternance</span>, afin de continuer à développer mes compétences et de contribuer activement à des projets ambitieux.
+              Étudiant ingénieur en M1 spécialisé en développement logiciel à l&apos;ENSEEIHT, je suis passionné par le développement web et la programmation en général. Actuellement, je suis <span className='font-bold'>à la recherche d&apos;un stage de 3 à 4 mois à partir de juin et/ou d&apos;une alternance</span>, afin de continuer à développer mes compétences et de contribuer activement à des projets ambitieux.
               </p>
               <div className='flex items-center self-start mt-4'>
                 <Link href="/cv_ayman_bahou.pdf" target={"_blank"}
