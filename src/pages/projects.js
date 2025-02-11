@@ -127,7 +127,7 @@ const Projects = () => {
                     <div className="grid grid-cols-12 gap-24 gap-y-32">
                     <div className="col-span-12 mt-12">
                             <FeaturedProject
-                                title="Projet fullstack gestion de stock avec Spring Boot/ReactJs"
+                                title="Projet fullstack gestion de stock avec Java Spring Boot/ReactJs"
                                 img={project5}
                                 summary="Conception et développement d’une API REST complète avec Spring
 Boot pour la gestion de produits et des mouvements de stock. Développement d’une interface utilisateur responsive en React pour

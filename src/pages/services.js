@@ -1,51 +1,41 @@
 import { useState } from "react";
 import Head from "next/head";
-import Layout from "../components/Layout"; 
-import AnimatedText from "../components/AnimatedText"; 
+import Layout from "../components/Layout";
+import AnimatedText from "../components/AnimatedText";
 import { motion } from "framer-motion";
-import { FaCode, FaChalkboardTeacher, FaChartPie, FaGamepad, FaUsers, FaLightbulb, FaPaintBrush } from "react-icons/fa"; // Updated icons
+import {sportpic} from "../../public/images/profile/spaym.JPG"
+import {
+  FaCode,
+  FaChalkboardTeacher,
+  FaChartPie,
+  FaGamepad,
+  FaUsers,
+  FaLightbulb,
+  FaPaintBrush,
+  FaRunning,
+  FaFutbol,
+} from "react-icons/fa";
+import Image from "next/image";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const services = [
   {
-    title: "Web Development & Design",
+    title: "Grand passionné de football",
     description:
-      "I can build responsive, visually appealing websites using HTML, CSS, JavaScript, and other front-end technologies like React. Whether you need a simple landing page or a full-fledged web application, I ensure the design is user-friendly and optimized for performance. I can also teach the basics of web development and help you understand how to code with the core technologies.",
-    icon: <FaCode />,
+      "Depuis mon enfance, le football occupe une place importante dans ma vie. J'apprécie l'ambiance conviviale et l'esprit d'équipe qui se crée lors de chaque match, et je m'investis pleinement dans la stratégie collective pour atteindre nos objectifs. Actif au sein du club de foot de l'AS-INP n7 depuis un an, je vis pleinement cette passion.",
+    icon: <FaFutbol />,
   },
   {
-    title: "Teaching Web Development & Coding Languages",
+    title: "La course à pied",
     description:
-      "I can teach you the fundamentals of web development and coding languages such as Java, HTML, CSS and Python. Whether you're starting from scratch or aiming to enhance your skills, I will provide step-by-step guidance and real-world examples to help you master the concepts and start building your own projects.",
-    icon: <FaChalkboardTeacher />,
+      "La course à pied me permet de clarifier mes idées tout en me défoulant. Participer à des marathons et compétitions organisés par mon école a renforcé ma détermination et m'a offert des moments de dépassement personnel.",
+    icon: <FaRunning />,
   },
   {
-    title: "Data Visualization & Analytics",
+    title: "Gaming",
     description:
-      "I can transform complex data into intuitive, visually appealing dashboards using tools like Python (Matplotlib, Seaborn, Pandas), or PowerBI. Whether it’s business intelligence or academic research, I can analyze trends, make predictions, and present your data in a way that makes it easier to understand and act upon.",
-    icon: <FaChartPie />,
-  },
-  {
-    title: "Game Coding & Development",
-    description:
-      "I can create interactive, engaging games using Java. From simple browser-based games to more complex experiences, I combine creativity with coding to bring your ideas to life. I also enjoy teaching game development to aspiring developers looking to enter this fun and dynamic field.",
+      "Passionné par les jeux vidéo, j'apprécie l'immersion dans des univers variés et les défis constants qu'ils proposent, stimulant ma créativité et ma réactivité.",
     icon: <FaGamepad />,
-  },
-  {
-    title: "Collaborative Project Development",
-    description:
-      "I can collaborate with you on your development projects, ensuring that your project is well-organized, the code is efficient, and milestones are met on time.",
-    icon: <FaUsers />,
-  },
-  {
-    title: "Consultancy & Graphics Design",
-    description:
-      "I offer consultancy services for web development, design, and overall digital strategies. I can also create logos and branding materials.",
-    icon: (
-      <div className="flex space-x-2 ">
-        <FaLightbulb /> <FaPaintBrush />
-      </div>
-    ),
   },
 ];
 
@@ -53,18 +43,18 @@ const Services = () => {
   return (
     <>
       <Head>
-        <title>AymanBahou | Services Page</title>
-        <meta name="description" content="Explore my range of services, from web development to data visualization and financial engineering." />
+        <title>AymanBahou | Activités et Hobbies</title>
+        <meta
+          name="description"
+          content="Explore my range of services, from web development to data visualization and financial engineering."
+        />
       </Head>
 
       <TransitionEffect />
 
       <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText
-            text="Empowering Your Vision Through Expertise!"
-            className="mb-16"
-          />
+          <AnimatedText text="Découvrez qui je suis" className="mb-16" />
 
           <div className="grid grid-cols-12 gap-24 gap-y-32 dark:text-light">
             {services.map((service, index) => (
@@ -73,6 +63,8 @@ const Services = () => {
           </div>
         </Layout>
       </main>
+      
+      
     </>
   );
 };
@@ -100,7 +92,9 @@ const ServiceCard = ({ service }) => {
       </motion.div>
 
       {/* Title centered */}
-      <h3 className="text-xl font-semibold mb-2 text-center">{service.title}</h3>
+      <h3 className="text-xl font-semibold mb-2 text-center">
+        {service.title}
+      </h3>
 
       {/* Description with Slide-in effect */}
       <motion.p
@@ -121,6 +115,7 @@ const ServiceCard = ({ service }) => {
       >
         {isExpanded ? "Read Less" : "Read More..."}
       </button>
+      
     </motion.div>
   );
 };

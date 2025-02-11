@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Layout from '@/components/Layout';
 import Image from 'next/image';
-import profilePic from "../../public/images/profile/developer-pic-1.png";
+import profilePic from "../../public/images/profile/AB-removebg-preview.png";
 import AnimatedText from '@/components/AnimatedText';
 import HireMe from '@/components/HireMe';
 import Link from 'next/link';
@@ -23,18 +23,18 @@ export default function Home() {
         <Layout>
           <div className="flex items-center justify-between w-full">
             {/* Image Section */}
-            <div className="transform translate-x-0 translate-y-0">
+            <div className="transform translate-x-12 translate-y-0">
               <Image 
                 src={profilePic} 
                 alt="Profile Picture" 
-                className='w-85 h-85 -mt-40'  
+                className='w-79 h-85 -mt-40'  
               />
             </div>
             {/* Text Section */}
             <div className='w-1/2 flex flex-col items-center self-center'>
               <AnimatedText text="Bonjour je m'appelle Ayman Bahou" className='!text-5xl' />
               <p className="mt-2 text-base font-medium">
-                 Etudiant en M1 à l'ENSEEIHT spécialisé en développement logiciel. Actuellement je suis à la recherche de stage de durée 3-4 mois à partir de Juin et/ou une alternance, pour continuer à developper mes compétences et contribuer activement à des projets ambitieux.
+              Étudiant ingénieur en M1 spécialisé en développement logiciel à l'ENSEEIHT, je suis passionné par le développement web et la programmation en général. Actuellement, je suis <span className='font-bold'>à la recherche d'un stage de 3 à 4 mois à partir de juin et/ou d'une alternance</span>, afin de continuer à développer mes compétences et de contribuer activement à des projets ambitieux.
               </p>
               <div className='flex items-center self-start mt-4'>
                 <Link href="/cv_ayman_bahou.pdf" target={"_blank"}

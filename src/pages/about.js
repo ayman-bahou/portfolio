@@ -59,7 +59,7 @@ const about = () => {
   
 <p className='my-4 font-medium'>
 Pour moi, le développement va au-delà du simple codage il s'agit de créer des expériences utilisateur fluides et intuitives. J'essaie de développer mes compétences chaque jour en développement d'applications, en me concentrant sur des solutions pratiques et centrées sur l'utilisateur.</p>
-<p className='my-4 font-medium'>Je suis pas un programmeur qui maîtrise tout, mais plutôt je suis quelqu'un discipliné et motivé et qui essaie de surpasser soi même chaque jour.
+<p className='my-4 font-medium'>Je ne suis pas un programmeur qui maîtrise tout, mais quelqu'un de discipliné, motivé et qui s'efforce de se surpasser chaque jour.
 
 
 
