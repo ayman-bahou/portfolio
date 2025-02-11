@@ -3,7 +3,7 @@ import Head from "next/head";
 import Layout from "../components/Layout";
 import AnimatedText from "../components/AnimatedText";
 import { motion } from "framer-motion";
-import {sportpic} from "../../public/images/profile/spaym.JPG"
+import {sportpic} from "../../public/images/profile/spaym.jpg"
 import {
   FaCode,
   FaChalkboardTeacher,
